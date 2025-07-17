@@ -1,0 +1,697 @@
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kode Mono", monospace;
+
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+}
+
+
+
+/* h1 h2 h3 {
+  display: none;
+} */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+
+.background-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-image: url("/assets/background-bolinhas.webp"); */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.3;
+  z-index: -1;
+}
+
+/* Cabeçalho */
+.cabecalho-principal {
+  background-color: #273345;
+  color: white;
+  padding: 0.5rem 2rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.conteudo-cabecalho {
+  /* background-color: #273345; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.icone-sup {
+  height: 80px;
+  width: auto;
+}
+
+.icone-sup:hover {
+  opacity: 0.5;
+}
+
+.redes-topo {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.redes-topo i {
+  font-size: 2.5rem;
+  color: white;
+  transition: color 0.3s ease;
+
+}
+
+.redes-topo i:hover {
+  opacity: 0.5;
+
+}
+
+/* Rodapé */
+.main-footer {
+  background-color: #273345;
+  color: white;
+  padding: 1rem 2rem;
+  margin-top: auto;
+  width: 100%;
+  height: 11vh;
+  position: relative;
+}
+
+.footer-conteudo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 1rem 0.1rem;
+}
+
+.elipse {
+  position: absolute;
+  top: -2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 6rem;
+  height: 6rem;
+  background-color: #273345;
+  border-radius: 50%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  z-index: 10;
+}
+
+.elipse img {
+  width: 3.5rem;
+  height: auto;
+}
+
+.elipse img:hover {
+  transform: scale(1.1);
+}
+
+.vilander-costa {
+  font-size: 1.1rem;
+}
+
+.infoContato {
+  text-align: right;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.infoContato a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 110px;
+  right: 20px;
+  z-index: 1000;
+  width: 80px;
+  height: 80px;
+  background-color: #25d366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  text-decoration: none;
+  z-index: 100;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}
+
+.whatsapp-float i {
+  font-size: 2.5rem;
+  color: white;
+}
+
+.menu-superior {
+  margin: 0;
+  padding: 0;
+}
+
+.bg-body-tertiary {
+  --bs-bg-opacity: 0 !important;
+  /* background-color: #273345 !important; */
+}
+
+.navbar-brand {
+  color: #fff;
+}
+
+.nav-link {
+  color: #fff;
+}
+
+.btn-outline-success {
+  --bs-btn-color: #C8C8C8;
+  --bs-btn-border-color: #C8C8C8;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #315164;
+  --bs-btn-hover-border-color: #ffffff;
+  --bs-btn-focus-shadow-rgb: 25, 135, 84;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #315164;
+  --bs-btn-active-border-color: #315164;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #315164;
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: #315164;
+  --bs-gradient: none;
+}
+
+@media (max-width: 1366px) {
+
+  .main-footer {
+    height: auto;
+  }
+
+  .footer-conteudo {
+    padding: 0.1em;
+  }
+}
+
+@media (max-width: 1024px) {
+
+  .main-footer {
+    height: auto;
+  }
+
+  .footer-conteudo {
+    padding: 0.1em;
+  }
+}
+
+@media (max-width: 910px) {
+
+  .infoContato {
+    z-index: 100;
+  }
+
+  .vilander-costa {
+    z-index: 100;
+  }
+}
+
+@media (max-width: 845px) {
+
+  .infoContato {
+    z-index: 100;
+  }
+
+  .vilander-costa {
+    z-index: 100;
+  }
+}
+
+@media (max-width: 785px) {
+
+  .elipse {
+    width: 4rem;
+    height: 4rem;
+    top: -1rem;
+  }
+
+  .elipse img {
+    width: 2.5rem;
+  }
+
+  .infoContato {
+    text-align: center;
+    font-size: 0.7rem;
+    z-index: 100;
+  }
+
+  .vilander-costa {
+    text-align: center;
+    font-size: 0.7rem;
+    padding-bottom: 0.5rem;
+    z-index: 100;
+  }
+}
+
+@media (max-width: 768px) {
+  .elipse {
+    width: 4rem;
+    height: 4rem;
+    top: -1rem;
+  }
+
+  .elipse img {
+    width: 2.5rem;
+  }
+
+  .infoContato {
+    text-align: center;
+    font-size: 0.7rem;
+    z-index: 100;
+  }
+
+  .vilander-costa {
+    text-align: center;
+    font-size: 0.7rem;
+    padding-bottom: 0.5rem;
+    z-index: 100;
+  }
+}
+
+@media (max-width: 600px) {
+  .elipse {
+    width: 4rem;
+    height: 4rem;
+    top: -1rem;
+  }
+
+  .elipse img {
+    width: 2.5rem;
+  }
+
+  .infoContato {
+    text-align: center;
+    font-size: 0.7rem;
+    z-index: 100;
+  }
+
+  .vilander-costa {
+    text-align: center;
+    font-size: 0.7rem;
+    padding-bottom: 0.5rem;
+    z-index: 100;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .redes-topo i {
+    font-size: 1.5rem;
+  }
+
+  .icone-sup {
+    height: 40px;
+
+  }
+
+  .whatsapp-float {
+    width: 50px;
+    height: 50px;
+    bottom: 90px;
+    right: 15px;
+  }
+
+  .whatsapp-float i {
+    font-size: 1.8rem;
+  }
+
+
+  .elipse {
+    top: -1rem;
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .elipse img {
+    width: 2rem;
+    height: auto;
+  }
+
+  .footer-conteudo {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.1rem;
+  }
+
+  .main-footer {
+    padding: 1rem;
+    margin-top: auto;
+    width: 100%;
+    height: auto;
+  }
+
+  .infoContato {
+    text-align: center;
+    font-size: 0.7rem;
+    z-index: 100;
+  }
+
+  .vilander-costa {
+    text-align: center;
+    font-size: 0.7rem;
+    padding-bottom: 0.5rem;
+    z-index: 100;
+  }
+}
+
+@media (max-width: 375px) {
+  .redes-topo i {
+    font-size: 1.5rem;
+  }
+
+  .icone-sup {
+    height: 40px;
+
+  }
+
+
+  .whatsapp-float {
+    width: 50px;
+    height: 50px;
+    bottom: 90px;
+    right: 15px;
+  }
+
+  .whatsapp-float i {
+    font-size: 1.8rem;
+  }
+
+  .elipse {
+    top: -1rem;
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .elipse img {
+    width: 2rem;
+    height: auto;
+  }
+
+  .footer-conteudo {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.1rem;
+  }
+
+  .main-footer {
+    padding: 1rem;
+    margin-top: auto;
+    width: 100%;
+    height: auto;
+  }
+
+  .infoContato {
+    text-align: center;
+    font-size: 0.7rem;
+    z-index: 100;
+  }
+
+  .vilander-costa {
+    text-align: center;
+    font-size: 0.7rem;
+    padding-bottom: 0.5rem;
+    z-index: 100;
+  }
+}
+
+
+
+.navbar-toggler,
+.navbar-toggler-icon {
+  filter: invert(50%) sepia(100%) saturate(60%) hue-rotate(180deg);
+}
+
+#bio-pessoal {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff37;
+  border-radius: 1rem;
+  box-shadow: 13px 10px 20px 3px #9090907c;
+  width: 95vw;
+  padding: 4rem 6rem;
+  text-align: center;
+  margin: 15rem auto 0;
+  gap: 5rem;
+  z-index: 1;
+}
+
+#bio-pessoal picture img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  display: block;
+  object-fit: cover;
+}
+
+#bio-pessoal h1 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  color: #273345;
+  text-align: right;
+}
+
+#bio-pessoal p {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  color: #333;
+  text-align: justify;
+}
+
+#bio-pessoal div {
+  flex: 1 1 300px;
+}
+
+.secao.personalizada {
+  width: 95vw;
+  margin: 5rem auto 0;
+  padding: 3rem 4rem;
+  background-color: #ffffff37;
+  border-radius: 1rem;
+  box-shadow: 13px 10px 20px 3px #9090907c;
+  text-align: center;
+  color: #273345;
+}
+
+.secao.personalizada .conteudo {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.secao.personalizada h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #273345;
+  text-align: right;
+}
+
+.secao.personalizada p,
+.secao.personalizada ul {
+  font-size: 1.4rem;
+  line-height: 1.7;
+  color: #333;
+}
+
+.secao.personalizada ul {
+  list-style: none;
+  padding: 0 auto;
+  text-align: left;
+}
+
+.secao.personalizada ul li::before {
+  content: "✔ ";
+  color: #007bff;
+  margin-right: 0.5rem;
+}
+
+.secao.personalizada ul .sub_li::before {
+  content: "↪ ";
+  color: #0e2741;
+  margin-right: 0.5rem;
+}
+
+.faculdade {
+  display: flex;
+  align-items: center;
+  background-color: #EFEAE6;
+  border-radius: 0.5rem;
+  box-shadow: 13px 10px 20px 3px #9090907c;
+  margin: 1rem auto;
+  padding: 1rem;
+}
+
+.faculdade img {
+  max-width: 100%;
+  height: 60px;
+  margin: 1rem;
+}
+
+#skills {
+  display: flex;
+}
+
+#skills img {
+  max-width: 100%;
+  height: 100vh;
+}
+
+.hab_soft li {
+  margin: 2.1rem;
+}
+
+.habilidades {
+  display: flex;
+}
+
+.hard_skill {
+  margin-bottom: 2rem;
+}
+
+.soft_skill {
+  margin-top: 2rem;
+}
+
+#CLT {
+  margin-bottom: 5rem;
+}
+
+#CLT .faculdade {
+  justify-content: space-evenly;
+}
+
+#DEV{
+  margin-top: 15rem;
+}
+
+#formulario {
+  margin-top: 15rem;
+}
+
+.formulario-contato .btn-success{
+  background-color: #273345;
+  border: #333;
+}
+
+.formulario-contato .btn-success:hover{
+  background-color: #08439c;
+}
+
+.redes_sociais {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  padding: 2rem;
+
+}
+
+.redes_sociais img {
+  width: 3.5rem;
+}
+
+.cv-download {
+  display: flex;
+  align-items: center;
+  background-color: #EFEAE6;
+  border-radius: 0.5rem;
+  box-shadow: 13px 10px 20px 3px #9090907c;
+  margin: 1rem auto;
+  padding: 1rem;
+  justify-content: center;
+  font-size: larger;
+}
+
+.cv-download img {
+  max-width: 100%;
+  height: 2rem;
+}
+
+.cv-download a {
+  font-size: x-large;
+  text-decoration: none;
+  font-weight: bold;
+  color: #273345;
+}
+
+.cv-download a:hover {
+  font-size: xx-large;
+  color: #021e3b;
+}
+
+#curriculo {
+  margin-bottom: 5rem;
+}
+
+@media (max-width: 768px) {
+  #bio-pessoal {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #bio-pessoal picture img {
+    max-width: 100%;
+    margin-bottom: 1.5rem;
+  }
+}
