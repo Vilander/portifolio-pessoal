@@ -15,7 +15,7 @@ const SearchBar = () => {
   };
 
   return (
-    <Form className="d-flex" onSubmit={handleSearch}>
+    <Form className="d-flex search-bar-form" onSubmit={handleSearch}>
       <FormControl
         type="search"
         placeholder="Digite aqui..."
@@ -25,7 +25,7 @@ const SearchBar = () => {
         onChange={(e) => setQuery(e.target.value)}
         required
       />
-      <Button variant="outline-success" type="submit">Pesquisa</Button>
+      <Button className="btn btn-outline-success" variant="outline-success" type="submit">Pesquisa</Button>
     </Form>
   );
 };

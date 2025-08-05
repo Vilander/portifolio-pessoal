@@ -19,7 +19,7 @@ const Header = () => {
       </div>
 
       <div className="menu-superior">
-        <Navbar expand="lg" variant="dark">
+        <Navbar expand="lg" variant="dark" className="menu-superior">
           <Container fluid>
             <Navbar.Brand as={Link} to="/">&lt;HOME&gt;</Navbar.Brand>
             <Navbar.Toggle aria-controls="navbarSupportedContent" />
