@@ -1,0 +1,14 @@
+import React from 'react';
+
+const InfoCard = ({ imageSrc, imageAlt, children }) => {
+  return (
+    <div className="info-card">
+      <img src={imageSrc} alt={imageAlt} />
+      <span>
+        {children}
+      </span>
+    </div>
+  );
+};
+
+export default InfoCard;
