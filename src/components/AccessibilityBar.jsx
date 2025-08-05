@@ -1,6 +1,8 @@
 import React, { useEffect, useRef } from 'react';
 import '../styles/asb.css';
 import '../styles/default.css';
+// import '../styles/scss/asb.scss';
+// import '../styles/scss/default.scss';
 
 const AccessibilityBar = () => {
   const accessKey = 4;
