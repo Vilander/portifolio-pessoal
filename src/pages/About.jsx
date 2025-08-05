@@ -43,6 +43,8 @@ const About = () => {
         </InfoCard>
         <InfoCard imageSrc={senacLogo} imageAlt="Logo SENAC">
           <p>Técnico em Informática para Internet - SENAC (cursando)</p>
+        </InfoCard><InfoCard imageSrc={unisalLogo} imageAlt="Logo Unisal">
+          <p>Técnico em Informática para Internet - SENAC (cursando)</p>
         </InfoCard>
         {/* Adicione os outros InfoCards aqui */}
       </section>
@@ -73,6 +75,12 @@ const About = () => {
       <section id="CLT" className="main-section">
         <h2>&#10074;Experiências Profissionais...</h2>
         <InfoCard imageSrc={safraLogo} imageAlt="Logo SAFRA BAG">
+          <h3>Safra Bag</h3>
+          <p>Assistente de Marketing</p>
+        </InfoCard><InfoCard imageSrc={schoolLogo} imageAlt="Logo SAFRA BAG">
+          <h3>Safra Bag</h3>
+          <p>Assistente de Marketing</p>
+        </InfoCard><InfoCard imageSrc={ajaxLogo} imageAlt="Logo SAFRA BAG">
           <h3>Safra Bag</h3>
           <p>Assistente de Marketing</p>
         </InfoCard>
