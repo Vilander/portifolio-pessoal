@@ -1,6 +1,6 @@
 import React from 'react';
 import Layout from '../components/Layout';
-import CarouselWrapper from '../components/CarouselWrapper';
+import Carrossel from '../components/Carrossel';
 
 // Importe as imagens dos projetos DEV
 const devItems = [
@@ -30,13 +30,13 @@ const mktItems = [
 ];
 
 
-const Portifolio = () => {
+const Portfolio = () => {
     return (
         <Layout>
             <section id="DEV" className="main-section" style={{ marginTop: '12rem' }}>
                 <div className="conteudo">
                     <h2>&#10074;Projetos DEV...</h2>
-                    <CarouselWrapper items={devItems} id="carouselDEV" />
+                    <Carrossel items={devItems} id="carouselDEV" />
                     <h6 style={{ color: '#9BA0AA' }}><em>CLIQUE NA IMAGEM PARA ACESSAR O REPOSITÓRIO GITHUB</em></h6>
                 </div>
             </section>
@@ -44,11 +44,11 @@ const Portifolio = () => {
             <section id="MKT" className="main-section">
                 <div className="conteudo">
                     <h2>&#10074;Marketing Digital...</h2>
-                    <CarouselWrapper items={mktItems} id="carouselMKT" />
+                    <Carrossel items={mktItems} id="carouselMKT" />
                 </div>
             </section>
         </Layout>
     );
 };
 
-export default Portifolio;
+export default Portfolio;

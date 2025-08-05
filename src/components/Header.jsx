@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Navbar, Nav, NavDropdown, Container } from 'react-bootstrap';
 import logo from '../assets/images/logo_vertical_VC_white.png';
-import SearchBar from './SearchBar'; // Componente de busca que criaremos
+import SearchBar from './SearchBar'; 
 
 const Header = () => {
   return (
@@ -34,8 +34,8 @@ const Header = () => {
                 </NavDropdown>
 
                 <NavDropdown title="<PORTIFÓLIO>" id="portfolio-dropdown">
-                  <NavDropdown.Item as={Link} to="/portifolio#DEV">Projetos DEV</NavDropdown.Item>
-                  <NavDropdown.Item as={Link} to="/portifolio#MKT">Marketing Digital</NavDropdown.Item>
+                  <NavDropdown.Item as={Link} to="/portfolio#DEV">Projetos DEV</NavDropdown.Item>
+                  <NavDropdown.Item as={Link} to="/portfolio#MKT">Marketing Digital</NavDropdown.Item>
                 </NavDropdown>
 
                 <Nav.Link as={Link} to="/blog">&lt;BLOG&gt;</Nav.Link>

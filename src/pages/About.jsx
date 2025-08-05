@@ -1,7 +1,7 @@
 import React from 'react';
 import Layout from '../components/Layout';
 import InfoCard from '../components/InfoCard';
-import CarouselWrapper from '../components/CarouselWrapper';
+import Carrossel from '../components/Carrossel';
 
 // Importe todas as imagens e logos necessários
 // Ex: import familiaImg from '../assets/images/IMG_1260.png';
@@ -51,7 +51,7 @@ const About = () => {
 
       <section id="cursos" className="main-section">
         <h2>&#10074;Cursos Complementares...</h2>
-        <CarouselWrapper items={cursoItems} id="cursosCarousel" />
+        <Carrossel items={cursoItems} id="cursosCarousel" />
       </section>
 
       <section id="skills" className="main-section">

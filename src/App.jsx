@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 // Importe suas páginas
 import Home from './pages/Home';
 import About from './pages/About';
-import Portifolio from './pages/Portifolio';
+import Portfolio from './pages/Portfolio';
 import Blog from './pages/Blog';
 import Contato from './pages/Contato';
 import SearchResults from './pages/SearchResults';
@@ -18,7 +18,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/sobre" element={<About />} />
-        <Route path="/portifolio" element={<Portifolio />} />
+        <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/contato" element={<Contato />} />
         <Route path="/search" element={<SearchResults />} />

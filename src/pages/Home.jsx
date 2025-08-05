@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Layout from '../components/Layout';
+import HomeHeader from '../components/HomeHeader';
 
 // Importe suas imagens
 import fotoPerfil from '../assets/images/foto-perfil.png';
@@ -10,7 +11,7 @@ import card3 from '../assets/images/card3.webp';
 
 const Home = () => {
     return (
-        <Layout>
+        <Layout header={<HomeHeader />}>
             <section className="conteudo-destaque">
                 <h2 className="developer-digital">
                     developer &<br />
@@ -19,7 +20,7 @@ const Home = () => {
 
                 <nav className="menu-lateral" aria-label="Menu principal">
                     <Link className="botao-menu" to="/sobre">&lt;SOBRE MIM&gt;</Link>
-                    <Link className="botao-menu" to="/portifolio">&lt;PORTFÓLIO&gt;</Link>
+                    <Link className="botao-menu" to="/portfolio">&lt;PORTFÓLIO&gt;</Link>
                     <Link className="botao-menu" to="/blog">&lt;BLOG&gt;</Link>
                     <Link className="botao-menu" to="/contato">&lt;CONTATO&gt;</Link>
                 </nav>
