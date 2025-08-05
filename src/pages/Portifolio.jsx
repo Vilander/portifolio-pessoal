@@ -4,51 +4,51 @@ import CarouselWrapper from '../components/CarouselWrapper';
 
 // Importe as imagens dos projetos DEV
 const devItems = [
-  {
-    image: '../assets/images/portfolio-print.PNG',
-    alt: 'Pagina Pessoal',
-    link: 'https://github.com/Vilander/uc5-projeto-integrador-frontend-senac'
-  },
-  {
-    image: '../assets/images/vida-ativa.PNG',
-    alt: 'Clinica Vida-Ativa - trabalho academico',
-    link: 'https://github.com/Vilander/vida-ativa'
-  },
-  {
-    image: '../assets/images/app-toaqui.PNG',
-    alt: 'APP Mural de Empreendedorismo Social Senac',
-    link: 'https://github.com/Vilander/toAqui'
-  }
+    {
+        image: '../assets/images/portfolio-print.PNG',
+        alt: 'Pagina Pessoal',
+        link: 'https://github.com/Vilander/uc5-projeto-integrador-frontend-senac'
+    },
+    {
+        image: '../assets/images/vida-ativa.PNG',
+        alt: 'Clinica Vida-Ativa - trabalho academico',
+        link: 'https://github.com/Vilander/vida-ativa'
+    },
+    {
+        image: '../assets/images/app-toaqui.PNG',
+        alt: 'APP Mural de Empreendedorismo Social Senac',
+        link: 'https://github.com/Vilander/toAqui'
+    }
 ];
 
 // Importe as imagens de Marketing
 const mktItems = [
-  { image: '../assets/images/MKT0001.jpg', alt: 'social media' },
-  { image: '../assets/images/MKT0002.JPG', alt: 'fotografia digital' },
-  { image: '../assets/images/MKT0003.png', alt: 'endomarketing' },
-  // ... adicione os outros
+    { image: '../assets/images/MKT0001.jpg', alt: 'social media' },
+    { image: '../assets/images/MKT0002.JPG', alt: 'fotografia digital' },
+    { image: '../assets/images/MKT0003.png', alt: 'endomarketing' },
+    // ... adicione os outros
 ];
 
 
-const Portfolio = () => {
-  return (
-    <Layout>
-      <section id="DEV" className="main-section" style={{ marginTop: '12rem' }}>
-        <div className="conteudo">
-          <h2>&#10074;Projetos DEV...</h2>
-          <CarouselWrapper items={devItems} id="carouselDEV" />
-          <h6 style={{ color: '#9BA0AA' }}><em>CLIQUE NA IMAGEM PARA ACESSAR O REPOSITÓRIO GITHUB</em></h6>
-        </div>
-      </section>
+const Portifolio = () => {
+    return (
+        <Layout>
+            <section id="DEV" className="main-section" style={{ marginTop: '12rem' }}>
+                <div className="conteudo">
+                    <h2>&#10074;Projetos DEV...</h2>
+                    <CarouselWrapper items={devItems} id="carouselDEV" />
+                    <h6 style={{ color: '#9BA0AA' }}><em>CLIQUE NA IMAGEM PARA ACESSAR O REPOSITÓRIO GITHUB</em></h6>
+                </div>
+            </section>
 
-      <section id="MKT" className="main-section">
-        <div className="conteudo">
-          <h2>&#10074;Marketing Digital...</h2>
-          <CarouselWrapper items={mktItems} id="carouselMKT" />
-        </div>
-      </section>
-    </Layout>
-  );
+            <section id="MKT" className="main-section">
+                <div className="conteudo">
+                    <h2>&#10074;Marketing Digital...</h2>
+                    <CarouselWrapper items={mktItems} id="carouselMKT" />
+                </div>
+            </section>
+        </Layout>
+    );
 };
 
-export default Portfolio;
+export default Portifolio;

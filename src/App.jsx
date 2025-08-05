@@ -4,13 +4,13 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 // Importe suas páginas
 import Home from './pages/Home';
 import About from './pages/About';
-import Portfolio from './pages/Portfolio';
+import Portifolio from './pages/Portifolio';
 import Blog from './pages/Blog';
-import Contact from './pages/Contact';
+import Contato from './pages/Contato';
 import SearchResults from './pages/SearchResults';
 
-// Importe seus estilos
-import './styles/global.css'; // Crie e ajuste este arquivo
+import './styles/global.css';
+import './styles/components.css';
 
 function App() {
   return (
@@ -18,9 +18,9 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/sobre" element={<About />} />
-        <Route path="/portifolio" element={<Portfolio />} />
+        <Route path="/portifolio" element={<Portifolio />} />
         <Route path="/blog" element={<Blog />} />
-        <Route path="/contato" element={<Contact />} />
+        <Route path="/contato" element={<Contato />} />
         <Route path="/search" element={<SearchResults />} />
       </Routes>
     </BrowserRouter>
