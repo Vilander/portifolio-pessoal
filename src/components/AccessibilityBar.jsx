@@ -1,13 +1,10 @@
 import React, { useEffect, useRef } from 'react';
 import '../styles/asb.css';
 import '../styles/default.css';
-// import '../styles/scss/asb.scss';
-// import '../styles/scss/default.scss';
 
 const AccessibilityBar = () => {
   const accessKey = 4;
   const htmlRef = useRef(document.documentElement);
-  const bodyRef = useRef(document.body);
 
   const btns = [
     { key: "contrast", icon: ["fas", "fa-adjust"], text: "Alto contraste" },
@@ -15,32 +12,12 @@ const AccessibilityBar = () => {
     { key: "incFont", icon: "A+", text: "Aumentar fonte" },
     { key: "oriFont", icon: "Aa", text: "Fonte original" },
     { key: "decFont", icon: "A-", text: "Diminuir fonte" },
-    { key: "markerLine", icon: ["fas", "fa-ruler-horizontal"], text: "Marcador" },
-    { key: "readingLine", icon: ["fas", "fa-ruler-horizontal"], text: "Linha guia" },
     { key: "reset", icon: ["fas", "fa-redo-alt"], text: "Redefinir" },
   ];
 
   useEffect(() => {
     const html = htmlRef.current;
-    const body = bodyRef.current;
-
-    const readingLine = document.createElement('div');
-    readingLine.id = 'readingLine';
-    document.body.insertBefore(readingLine, document.body.firstChild);
-
-    const markerLine = document.createElement('div');
-    markerLine.id = 'markerLine';
-    document.body.insertBefore(markerLine, document.body.firstChild);
-
-    html.addEventListener('mousemove', e => {
-      const y = `${e.pageY - 20}px`;
-      if (body.classList.contains('accessibility_readingLine')) {
-        readingLine.style.top = y;
-      }
-      if (body.classList.contains('accessibility_markerLine')) {
-        markerLine.style.top = y;
-      }
-    });
+    const body = document.body;
 
     const FontSize = {
       storage: 'fontSizeState',
@@ -131,17 +108,10 @@ const AccessibilityBar = () => {
         case 'oriFont':
           FontSize.reset();
           break;
-        case 'markerLine':
-          body.classList.toggle('accessibility_markerLine');
-          break;
-        case 'readingLine':
-          body.classList.toggle('accessibility_readingLine');
-          break;
         case 'reset':
           Contrast.set(false);
           Dark.set(false);
           FontSize.reset();
-          body.classList.remove('accessibility_readingLine', 'accessibility_markerLine');
           break;
         default:
           break;
@@ -153,9 +123,7 @@ const AccessibilityBar = () => {
       btn.addEventListener('click', () => toggle(btn.dataset.accessibility));
     });
 
-    return () => {
-      html.removeEventListener('mousemove', () => {});
-    };
+    return () => { };
   }, []);
 
   return (
