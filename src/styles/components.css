@@ -53,7 +53,7 @@
 
 
 /* --- BOOTSTRAP NAVBAR OVERRIDES --- */
-.menu-superior {
+/* .menu-superior {
   margin: 0;
   padding: 0;
 }
@@ -107,7 +107,7 @@
   --bs-btn-hover-color: #fff;
   --bs-btn-hover-bg: #315164;
   --bs-btn-hover-border-color: #ffffff;
-}
+} */
 
 /* --- FOOTER --- */
 .main-footer {
@@ -535,7 +535,7 @@
 
 
 /* --- PÁGINA DE BUSCA (pages.css) --- */
-.search-results-container {
+/* .search-results-container {
   padding: 2rem 1rem;
   max-width: 800px;
   margin: 12rem auto;
@@ -585,7 +585,7 @@
 .search-bar-form button {
   border-radius: 30px;
   padding: 0.5rem 1.5rem;
-}
+} */
 
 
 
