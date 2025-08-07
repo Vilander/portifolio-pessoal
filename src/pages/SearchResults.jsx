@@ -1,49 +1,90 @@
-import React, { useState, useEffect } from 'react';
-import { useSearchParams, Link } from 'react-router-dom';
-import Layout from '../components/Layout';
-import { searchableContent } from '../search-data'; // Importa os dados
+import React, { useState, useEffect, useCallback } from 'react';
+import { useLocation } from 'react-router-dom';
+import { searchData } from '../data/searchData';
+import './SearchResults.css';
 
 const SearchResults = () => {
-  const [searchParams] = useSearchParams();
-  const query = searchParams.get('query');
+  const location = useLocation();
+  const [query, setQuery] = useState('');
   const [results, setResults] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  const createSnippet = (content, lowerQuery) => {
+    const index = content.toLowerCase().indexOf(lowerQuery);
+    if (index === -1) return content.substring(0, 180) + "...";
+
+    const start = Math.max(0, index - 80);
+    const end = Math.min(content.length, index + lowerQuery.length + 100);
+    let snippet = content.substring(start, end);
+
+    if (start > 0) snippet = "..." + snippet;
+    if (end < content.length) snippet += "...";
+
+    return snippet.replace(new RegExp(lowerQuery, "gi"), match => `<mark>${match}</mark>`);
+  };
+
+  const performSearch = useCallback((searchQuery) => {
+    setLoading(true);
+    setError(null);
+    setResults([]);
+
+    const lowerQuery = searchQuery.toLowerCase();
+
+    const foundResults = searchData
+      .filter(item => item.content.toLowerCase().includes(lowerQuery))
+      .map(item => ({
+        ...item,
+        snippet: createSnippet(item.content, lowerQuery)
+      }));
+
+    setResults(foundResults);
+    setLoading(false);
+  }, []);
 
   useEffect(() => {
-    if (query) {
-      const lowerCaseQuery = query.toLowerCase();
-      const foundResults = searchableContent.filter(page =>
-        page.content.toLowerCase().includes(lowerCaseQuery)
-      );
-      setResults(foundResults);
+    const urlParams = new URLSearchParams(location.search);
+    const currentQuery = urlParams.get("query");
+
+    if (currentQuery) {
+      setQuery(currentQuery);
+      performSearch(currentQuery);
+    } else {
+      setQuery('');
+      setResults([]);
+      setLoading(false);
     }
-  }, [query]);
+  }, [location.search, performSearch]);
 
   return (
-    <Layout>
-      <div className="search-results-container">
-        <h2>Resultados da pesquisa para: "<span>{query}</span>"</h2>
-        <div id="results-container">
-          {results.length > 0 ? (
-            <ul className="search-results-list">
-              {results.map(result => (
-                <li key={result.path} className="search-result-item">
-                  <h3><Link to={result.path}>{result.title}</Link></h3>
-                  <p className="snippet">
-                    {/* Simplesmente mostra um trecho inicial, pode ser melhorado */}
-                    {result.content.substring(0, 150)}...
-                  </p>
-                  <Link to={result.path} className="result-link">
-                    Acessar a página
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          ) : (
-            <p>Nenhum resultado encontrado para sua busca.</p>
-          )}
-        </div>
+    <div className="container mx-auto p-4 main-section">
+      <h2 className="text-2xl font-bold mb-4">
+        Resultados da pesquisa para: "<span className="text-blue-600">{query}</span>"
+      </h2>
+
+      <div id="results-container">
+        {loading && <p>Pesquisando...</p>}
+        {error && <p className="text-danger">{error}</p>}
+        {!loading && !error && results.length === 0 && (
+          <p>Nenhum resultado encontrado para sua busca.</p>
+        )}
+        {!loading && !error && results.length > 0 && (
+          <ul className="search-results-list list-unstyled">
+            {results.map((result, index) => (
+              <li key={index} className="search-result-item bg-light p-4 mb-4 rounded shadow-sm">
+                <h3 className="h5 mb-2">
+                  <a href={result.url} className="text-primary text-decoration-none" dangerouslySetInnerHTML={{ __html: result.title }}></a>
+                </h3>
+                <p className="snippet text-dark" dangerouslySetInnerHTML={{ __html: result.snippet }}></p>
+                <a href={result.url} className="result-link text-muted small">
+                  {window.location.origin}{result.url}
+                </a>
+              </li>
+            ))}
+          </ul>
+        )}
       </div>
-    </Layout>
+    </div>
   );
 };
 

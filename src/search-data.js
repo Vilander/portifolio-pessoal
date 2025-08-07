@@ -1,22 +1,42 @@
-export const searchableContent = [
+// src/data/searchData.js
+
+export const searchData = [
   {
-    path: '/sobre',
-    title: 'Sobre Mim',
-    content: `Hello World... Olá mundo, sou Vilander... Formação Acadêmica... Cursos... Habilidades... Experiências...` // Coloque todo o texto da página aqui
+    title: "Sobre Mim",
+    url: "/sobre#bio-pessoal",
+    content: `
+      Olá! Meu nome é Vilander Costa. Sou desenvolvedor front-end com experiência em React, JavaScript e outras tecnologias modernas.
+      Tenho formação acadêmica sólida, cursos complementares e habilidades técnicas que me permitem criar soluções eficientes.
+    `
   },
   {
-    path: '/portifolio',
-    title: 'Portifólio',
-    content: `Projetos DEV... Marketing Digital...` // Coloque o texto da página aqui
+    title: "Portfólio DEV",
+    url: "/portfolio#DEV",
+    content: `
+      Meu portfólio de desenvolvimento inclui projetos com React, Node.js, APIs REST, e aplicações responsivas.
+      Cada projeto reflete minha capacidade de resolver problemas e entregar valor ao usuário final.
+    `
   },
   {
-    path: '/blog',
-    title: 'Blog',
-    content: `DEVCONVERGE -LATAM 2025... Hackathon Senac... ERP Summit 2025...` // E assim por diante
+    title: "Marketing Digital",
+    url: "/portfolio#MKT",
+    content: `
+      Também atuo com marketing digital, incluindo estratégias de SEO, campanhas em redes sociais e análise de métricas.
+      A combinação entre tecnologia e marketing me permite criar soluções completas.
+    `
   },
-    {
-    path: '/contato',
-    title: 'Contato',
-    content: `Fale Comigo... vilander.costa@gmail.com Minhas Redes... Meu Currículo...` // E assim por diante
+  {
+    title: "Blog",
+    url: "/blog",
+    content: `
+      No blog compartilho eventos, dicas de desenvolvimento, tendências de tecnologia e notícias relevantes para profissionais da área.
+    `
+  },
+  {
+    title: "Contato",
+    url: "/contato#formulario",
+    content: `
+      Entre em contato comigo através do formulário ou pelas redes sociais. Estou disponível para projetos, parcerias e oportunidades profissionais.
+    `
   }
 ];

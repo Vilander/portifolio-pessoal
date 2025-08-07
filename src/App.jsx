@@ -3,7 +3,13 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 
-// Importe suas páginas
+import './styles/global.css';
+import './styles/components.css';
+
+// Componentes globais
+// import Navbar from './components/Navbar';
+
+// Páginas
 import Home from './pages/Home';
 import About from './pages/About';
 import Portfolio from './pages/Portfolio';
@@ -11,8 +17,6 @@ import Blog from './pages/Blog';
 import Contato from './pages/Contato';
 import SearchResults from './pages/SearchResults';
 
-import './styles/global.css';
-import './styles/components.css';
 
 function App() {
   return (
@@ -30,3 +34,4 @@ function App() {
 }
 
 export default App;
+
