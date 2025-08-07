@@ -3,8 +3,8 @@ import Layout from '../components/Layout';
 import InfoCard from '../components/InfoCard';
 import Carrossel from '../components/Carrossel';
 
-// Importe todas as imagens e logos necessários
-// Ex: import familiaImg from '../assets/images/IMG_1260.png';
+// Imagens pessoais e logos
+import familiaImg from '../assets/images/IMG_1260.png';
 import univespLogo from '../assets/images/univesp.png';
 import senacLogo from '../assets/images/senac.png';
 import unisalLogo from '../assets/images/unisal.png';
@@ -14,20 +14,24 @@ import safraLogo from '../assets/images/logo_safra.png';
 import schoolLogo from '../assets/images/logo_school.svg';
 import ajaxLogo from '../assets/images/logo_ajax.png';
 
-// Importe as imagens dos certificados para o carrossel
-// Crie uma lista de objetos para o carrossel de cursos
+// Certificados
+import cert1 from '../assets/images/certificado (1).png';
+import cert2 from '../assets/images/certificado (2).png';
+import cert3 from '../assets/images/certificado (3).png';
+// Importe os demais certificados até o 13...
+
 const cursoItems = [
-  { image: '../assets/images/certificado (1).png', alt: 'Certificado 1' },
-  { image: '../assets/images/certificado (2).png', alt: 'Certificado 2' },
-  // Adicione todos os 13 certificados aqui...
+  { image: cert1, alt: 'Certificado 1' },
+  { image: cert2, alt: 'Certificado 2' },
+  { image: cert3, alt: 'Certificado 3' },
+  // Adicione os demais certificados aqui...
 ];
 
 const About = () => {
   return (
     <Layout>
-      <section id="bio-pessoal" className="main-section" style={{marginTop: '12rem'}}>
-        {/* Adicione a tag <picture> se precisar de imagens responsivas */}
-        <img src={'../assets/images/IMG_1260.png'} alt="Família de Vilander" />
+      <section id="bio-pessoal" className="main-section" style={{ marginTop: '12rem' }}>
+        <img src={familiaImg} alt="Família de Vilander" />
         <div>
           <h1>&#10074;Hello World...</h1>
           <p>
@@ -43,10 +47,10 @@ const About = () => {
         </InfoCard>
         <InfoCard imageSrc={senacLogo} imageAlt="Logo SENAC">
           <p>Técnico em Informática para Internet - SENAC (cursando)</p>
-        </InfoCard><InfoCard imageSrc={unisalLogo} imageAlt="Logo Unisal">
-          <p>Técnico em Informática para Internet - SENAC (cursando)</p>
         </InfoCard>
-        {/* Adicione os outros InfoCards aqui */}
+        <InfoCard imageSrc={unisalLogo} imageAlt="Logo UNISAL">
+          <p>Curso complementar em Desenvolvimento Web - UNISAL</p>
+        </InfoCard>
       </section>
 
       <section id="cursos" className="main-section">
@@ -60,13 +64,23 @@ const About = () => {
           <img src={dev1Img} alt="Ícones de Hard Skills" />
           <div>
             <h3 className="hard_skill">Hard Skills:</h3>
-            {/* Listas de habilidades aqui */}
+            <ul>
+              <li>HTML, CSS, JavaScript</li>
+              <li>React, Node.js</li>
+              <li>Git, GitHub</li>
+              <li>Banco de Dados SQL</li>
+            </ul>
           </div>
         </div>
         <div className="habilidades hab_soft">
           <div>
             <h3 className="soft_skill">Soft Skills:</h3>
-            {/* Listas de habilidades aqui */}
+            <ul>
+              <li>Comunicação</li>
+              <li>Trabalho em equipe</li>
+              <li>Resolução de problemas</li>
+              <li>Adaptabilidade</li>
+            </ul>
           </div>
           <img src={dev2Img} alt="Ícones de Soft Skills" />
         </div>
@@ -74,17 +88,18 @@ const About = () => {
 
       <section id="CLT" className="main-section">
         <h2>&#10074;Experiências Profissionais...</h2>
-        <InfoCard imageSrc={safraLogo} imageAlt="Logo SAFRA BAG">
-          <h3>Safra Bag</h3>
-          <p>Assistente de Marketing</p>
-        </InfoCard><InfoCard imageSrc={schoolLogo} imageAlt="Logo SAFRA BAG">
-          <h3>Safra Bag</h3>
-          <p>Assistente de Marketing</p>
-        </InfoCard><InfoCard imageSrc={ajaxLogo} imageAlt="Logo SAFRA BAG">
+        <InfoCard imageSrc={safraLogo} imageAlt="Logo Safra Bag">
           <h3>Safra Bag</h3>
           <p>Assistente de Marketing</p>
         </InfoCard>
-        {/* Adicione as outras experiências aqui */}
+        <InfoCard imageSrc={schoolLogo} imageAlt="Logo School">
+          <h3>School</h3>
+          <p>Instrutor de Informática</p>
+        </InfoCard>
+        <InfoCard imageSrc={ajaxLogo} imageAlt="Logo Ajax">
+          <h3>Ajax</h3>
+          <p>Desenvolvedor Júnior</p>
+        </InfoCard>
       </section>
     </Layout>
   );

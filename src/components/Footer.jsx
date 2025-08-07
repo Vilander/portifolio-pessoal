@@ -1,5 +1,6 @@
 import React from 'react';
 import arrowUp from '../assets/images/arrow-up-white-vazado.png';
+import './Footer.css'
 
 const Footer = () => {
   const scrollToTop = () => {
