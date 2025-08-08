@@ -1,6 +1,7 @@
 import React from 'react';
 import Layout from '../components/Layout';
 import Carrossel from '../components/Carrossel';
+import './Portfolio.css'
 
 // Importe as imagens dos projetos DEV
 const devItems = [

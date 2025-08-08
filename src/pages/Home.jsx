@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Layout from '../components/Layout';
 import HomeHeader from '../components/HomeHeader';
+import './Home.css'
 
 // Importe suas imagens
 import fotoPerfil from '../assets/images/foto-perfil.png';
