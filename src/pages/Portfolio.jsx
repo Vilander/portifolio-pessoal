@@ -3,31 +3,39 @@ import Layout from '../components/Layout';
 import Carrossel from '../components/Carrossel';
 import './Portfolio.css'
 
-// Importe as imagens dos projetos DEV
+// Importe as imagens dos projetos DEV como módulos
+import portfolioPrintImg from '../assets/images/portfolio-print.PNG';
+import vidaAtivaImg from '../assets/images/vida-ativa.PNG';
+import appToAquiImg from '../assets/images/app-toaqui.PNG';
+
+// Importe as imagens de Marketing como módulos
+import mktImg1 from '../assets/images/MKT0001.jpg';
+import mktImg2 from '../assets/images/MKT0002.JPG';
+import mktImg3 from '../assets/images/MKT0003.png';
+
 const devItems = [
     {
-        image: '../assets/images/portfolio-print.PNG',
+        image: portfolioPrintImg,
         alt: 'Pagina Pessoal',
         link: 'https://github.com/Vilander/uc5-projeto-integrador-frontend-senac'
     },
     {
-        image: '../assets/images/vida-ativa.PNG',
+        image: vidaAtivaImg, 
         alt: 'Clinica Vida-Ativa - trabalho academico',
         link: 'https://github.com/Vilander/vida-ativa'
     },
     {
-        image: '../assets/images/app-toaqui.PNG',
+        image: appToAquiImg, 
         alt: 'APP Mural de Empreendedorismo Social Senac',
         link: 'https://github.com/Vilander/toAqui'
     }
 ];
 
-// Importe as imagens de Marketing
 const mktItems = [
-    { image: '../assets/images/MKT0001.jpg', alt: 'social media' },
-    { image: '../assets/images/MKT0002.JPG', alt: 'fotografia digital' },
-    { image: '../assets/images/MKT0003.png', alt: 'endomarketing' },
-    // ... adicione os outros
+    { image: mktImg1, alt: 'social media' },
+    { image: mktImg2, alt: 'fotografia digital' },
+    { image: mktImg3, alt: 'endomarketing' },
+    
 ];
 
 

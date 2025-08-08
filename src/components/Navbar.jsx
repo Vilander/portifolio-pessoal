@@ -80,8 +80,8 @@ function Navbar() {
                                         &lt;PORTFÓLIO&gt;
                                     </button>
                                     <ul className="dropdown-menu">
-                                        <li><HashLink className="dropdown-item" to="/portifolio#DEV">Projetos DEV</HashLink></li>
-                                        <li><HashLink className="dropdown-item" to="/portifolio#MKT">Marketing Digital</HashLink></li>
+                                        <li><HashLink className="dropdown-item" to="/portfolio#DEV">Projetos DEV</HashLink></li>
+                                        <li><HashLink className="dropdown-item" to="/portfolio#MKT">Marketing Digital</HashLink></li>
                                     </ul>
                                 </li>
 
