@@ -13,23 +13,25 @@
     
 }
 
-ul {
+.main-section ul {
     list-style: none;
     padding: 0 auto;
     text-align: left;
 }
 
-ul li::before {
+.main-section ul li::before {
     content: "✔ ";
     color: var(--accent-color);
     margin-right: var(--spacing-sm);
 }
 
-ul .sub-list-item::before {
+.main-section ul .sub-list-item::before {
     content: "↪ ";
     color: var(--primary-color);
     margin-right: var(--spacing-sm);
 }
+
+
 
 
 @media (max-width: 768px) {

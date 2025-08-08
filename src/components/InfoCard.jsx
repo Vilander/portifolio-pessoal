@@ -1,4 +1,5 @@
 import React from 'react';
+import './InfoCard.css'
 
 const InfoCard = ({ imageSrc, imageAlt, children }) => {
   return (

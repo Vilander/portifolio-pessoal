@@ -87,12 +87,14 @@ const About = () => {
         <h2>&#10074;Formação Acadêmica...</h2>
         <InfoCard imageSrc={univespLogo} imageAlt="Logo UNIVESP">
           <p>Bacharel em Ciência de Dados - UNIVESP (cursando)</p>
+        </InfoCard><InfoCard imageSrc={univespLogo} imageAlt="Logo UNIVESP">
+          <p>Bacharel em Tecnologia da Informação - ênfase em analise de dados- UNIVESP (2025)</p>
         </InfoCard>
         <InfoCard imageSrc={senacLogo} imageAlt="Logo SENAC">
           <p>Técnico em Informática para Internet - SENAC (cursando)</p>
         </InfoCard>
         <InfoCard imageSrc={unisalLogo} imageAlt="Logo UNISAL">
-          <p>Curso complementar em Desenvolvimento Web - UNISAL</p>
+          <p>Curso complementar em Desenvolvimento Web - UNISAL(2009)</p>
         </InfoCard>
       </section>
 
@@ -165,14 +167,15 @@ const About = () => {
           <p>Assistente de Marketing</p>
         </InfoCard>
         <InfoCard imageSrc={schoolLogo} imageAlt="Logo School">
-          <h3>School</h3>
-          <p>Instrutor de Informática</p>
+          <h3>School Picture</h3>
+          <p>Líder Pré-Impressão</p>
         </InfoCard>
         <InfoCard imageSrc={ajaxLogo} imageAlt="Logo Ajax">
           <h3>Ajax</h3>
-          <p>Desenvolvedor Júnior</p>
+          <p>Assitente de escritório</p>
         </InfoCard>
       </section>
+      
     </Layout>
   );
 };
