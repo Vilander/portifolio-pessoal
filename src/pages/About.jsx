@@ -47,7 +47,7 @@ const cursoItems = [
   { image: cert9, alt: 'Certificado 9' },
   { image: cert10, alt: 'Certificado 10' },
   { image: cert11, alt: 'Certificado 11' },
-  { image: cert12, alt: 'Certificado 12'},
+  { image: cert12, alt: 'Certificado 12' },
   { image: cert13, alt: 'Certificado 13' },
 
 ];
@@ -55,7 +55,7 @@ const cursoItems = [
 const About = () => {
   return (
     <Layout>
-      
+
       <section id="bio-pessoal" className="main-section" style={{ marginTop: '12rem' }}>
         <picture className='foto-familia'>
           <source
@@ -108,10 +108,26 @@ const About = () => {
           <div>
             <h3 className="hard_skill">Hard Skills:</h3>
             <ul>
-              <li>HTML, CSS, JavaScript</li>
-              <li>React, Node.js</li>
-              <li>Git, GitHub</li>
-              <li>Banco de Dados SQL</li>
+              <li>Desenvolvimento Web</li>
+              <ul>
+                <li className="sub-list-item">HTML | CSS | JavaScript | React | WordPress</li>
+              </ul>
+              <li>Linguagens de Programação e Dados</li>
+              <ul>
+                <li className="sub-list-item">Python | SQL | Power BI | Excel</li>
+              </ul>
+              <li>Ferramentas de Versionamento e DevOps</li>
+              <ul>
+                <li className="sub-list-item">Git | Github | Linux</li>
+              </ul>
+              <li>Design e Comunicação Visual</li>
+              <ul>
+                <li className="sub-list-item">Figma | Photoshop | Illustrator | InDesign | Fotografia</li>
+              </ul>
+              <li>Pacote Office</li>
+              <ul>
+                <li className="sub-list-item">Excel | Word | PowerPoint</li>
+              </ul>
             </ul>
           </div>
         </div>
@@ -119,10 +135,23 @@ const About = () => {
           <div>
             <h3 className="soft_skill">Soft Skills:</h3>
             <ul>
-              <li>Comunicação</li>
-              <li>Trabalho em equipe</li>
-              <li>Resolução de problemas</li>
-              <li>Adaptabilidade</li>
+              <li>
+                Pensamento Crítico | Curiosidade | Agilidade
+                de Aprendizagem | Perfil Analítico
+              </li>
+              <li>
+                Comunicação | Trabalho em Equipe | Gestão
+                de Conflitos | Inteligência Emocional | Liderança
+              </li>
+              <li>
+                Organização | Gestão do Tempo | Compromisso com
+                Resultados | Foco em Qualidade | Senso de Urgência
+              </li>
+              <li>
+                Proatividade | Criatividade | Adaptabilidade |
+                Resiliência
+              </li>
+
             </ul>
           </div>
           <img src={dev2Img} alt="Ícones de Soft Skills" />
