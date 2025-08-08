@@ -29,9 +29,9 @@ const Contato = () => {
         <div className="conteudo">
           <h2>&#10074;Minhas Redes...</h2>
           <div className="redes_sociais">
-            <a href="https://www.instagram.com/vilandercosta/"><img src={instagramIcon} alt="Instagram" /></a>
-            <a href="https://www.linkedin.com/in/vilander-costa/"><img src={linkedinIcon} alt="LinkedIn" /></a>
-            <a href="https://github.com/Vilander"><img src={githubIcon} alt="Github" /></a>
+            <a href="https://www.instagram.com/vilandercosta/" target="_blank" rel="noopener noreferrer"><img src={instagramIcon} alt="Instagram" /></a>
+            <a href="https://www.linkedin.com/in/vilander-costa/" target="_blank" rel="noopener noreferrer"><img src={linkedinIcon} alt="LinkedIn" /></a>
+            <a href="https://github.com/Vilander" target="_blank" rel="noopener noreferrer"><img src={githubIcon} alt="Github" /></a>
           </div>
         </div>
       </section>
@@ -40,7 +40,7 @@ const Contato = () => {
         <div className="conteudo">
           <h2>&#10074;Meu Currículo...</h2>
           <div className="cv-download">
-            
+
             <a href={cvFile} download="CV_TI_Vilander Costa_2025.pdf"><img src={downloadIcon} alt="download" />Download CV</a>
           </div>
         </div>
