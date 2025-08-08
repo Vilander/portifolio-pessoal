@@ -167,7 +167,7 @@ const About = () => {
           <p>Assistente de Marketing</p>
         </InfoCard>
         <InfoCard imageSrc={schoolLogo} imageAlt="Logo School">
-          <h3>School Picture</h3>
+          <h3>School</h3>
           <p>Líder Pré-Impressão</p>
         </InfoCard>
         <InfoCard imageSrc={ajaxLogo} imageAlt="Logo Ajax">
