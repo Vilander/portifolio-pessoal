@@ -51,7 +51,7 @@ const Home = () => {
                         </Link>
                     </article>
                     <article className="card">
-                        <Link to="/sobre#CLT">
+                        <Link to="/blog">
                             <img src={card3} alt="Imagem ilustrativa sobre experiências profissionais" />
                             <p className="texto-card">
                                 Fotografia, marketing ou desenvolvimento? Saiba mais sobre minhas experiências profissionais e minhas formações.
