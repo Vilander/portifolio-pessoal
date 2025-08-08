@@ -38,6 +38,11 @@
     color: var(--secondary-color);
 }
 
+.email-text:hover{
+    font-size: x-large;
+    color: var(--secondary-color);
+}
+
 .email-icon {
     transition: transform 0.3s ease;
 }
@@ -46,6 +51,8 @@
     transform: scale(1.2);
     filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
 }
+
+
 
 .cv-download {
     display: flex;
