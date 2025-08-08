@@ -1,5 +1,6 @@
 import React from 'react';
 import Layout from '../components/Layout';
+import './Contato.css'
 
 // Importe ícones e o PDF
 import gmailIcon from '../assets/icons/icons8-gmail-novo.svg';
@@ -39,8 +40,8 @@ const Contato = () => {
         <div className="conteudo">
           <h2>&#10074;Meu Currículo...</h2>
           <div className="cv-download">
-            <img src={downloadIcon} alt="download" />
-            <a href={cvFile} download="CV_TI_Vilander Costa_2025.pdf">Download CV</a>
+            
+            <a href={cvFile} download="CV_TI_Vilander Costa_2025.pdf"><img src={downloadIcon} alt="download" />Download CV</a>
           </div>
         </div>
       </section>

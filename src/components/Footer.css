@@ -1,0 +1,59 @@
+.main-footer {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1rem 2rem;
+  margin-top: auto;
+  width: 100%;
+  height: auto; /* Ajustado para responsividade */
+  min-height: 11vh;
+  position: relative;
+}
+
+.footer-conteudo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 1rem 0.1rem;
+}
+
+.elipse {
+  position: absolute;
+  top: -2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 6rem;
+  height: 6rem;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.elipse img {
+  width: 3.5rem;
+  height: auto;
+  transition: transform 0.2s ease-in-out;
+}
+
+.elipse:hover img {
+  transform: scale(1.1);
+}
+
+.vilander-costa {
+  font-size: 1.1rem;
+}
+
+.infoContato {
+  text-align: right;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.infoContato a {
+  color: #fff;
+  text-decoration: none;
+}
