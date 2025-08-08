@@ -1,4 +1,21 @@
 .foto-familia {
     display: flex;
     justify-content: center;
+    max-width: 100%;
+    height: auto;
+}
+
+
+#bio-pessoal {
+    display: block;
+    align-items: center;
+    gap: 2rem;
+    
+}
+
+
+@media (max-width: 768px) {
+    #bio-pessoal {
+        flex-direction: column;
+    }
 }

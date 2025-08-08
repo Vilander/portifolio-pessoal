@@ -4,11 +4,12 @@ import InfoCard from '../components/InfoCard';
 import Carrossel from '../components/Carrossel';
 import './About.css'
 
-// Imagens pessoais e logos
-// import familiaImg from '../assets/images/IMG_1260.png';
+// Imagens pessoais 
 import familiaGrandeImg from '../assets/images/IMG_1260.png';
 import familiaMediaImg from '../assets/images/IMG_1260_M.png';
 import familiaPequenaImg from '../assets/images/IMG_1260_P.png';
+
+// logos
 import univespLogo from '../assets/images/univesp.png';
 import senacLogo from '../assets/images/senac.png';
 import unisalLogo from '../assets/images/unisal.png';
@@ -22,27 +23,39 @@ import ajaxLogo from '../assets/images/logo_ajax.png';
 import cert1 from '../assets/images/certificado (1).png';
 import cert2 from '../assets/images/certificado (2).png';
 import cert3 from '../assets/images/certificado (3).png';
-// Importe os demais certificados até o 13...
+import cert4 from '../assets/images/certificado (4).png';
+import cert5 from '../assets/images/certificado (5).png';
+import cert6 from '../assets/images/certificado (6).png';
+import cert7 from '../assets/images/certificado (7).png';
+import cert8 from '../assets/images/certificado (8).png';
+import cert9 from '../assets/images/certificado (9).png';
+import cert10 from '../assets/images/certificado (10).png';
+import cert11 from '../assets/images/certificado (11).png';
+import cert12 from '../assets/images/certificado (12).png';
+import cert13 from '../assets/images/certificado (13).png';
+
 
 const cursoItems = [
   { image: cert1, alt: 'Certificado 1' },
   { image: cert2, alt: 'Certificado 2' },
   { image: cert3, alt: 'Certificado 3' },
-  // Adicione os demais certificados aqui...
+  { image: cert4, alt: 'Certificado 4' },
+  { image: cert5, alt: 'Certificado 5' },
+  { image: cert6, alt: 'Certificado 6' },
+  { image: cert7, alt: 'Certificado 7' },
+  { image: cert8, alt: 'Certificado 8' },
+  { image: cert9, alt: 'Certificado 9' },
+  { image: cert10, alt: 'Certificado 10' },
+  { image: cert11, alt: 'Certificado 11' },
+  { image: cert12, alt: 'Certificado 12'},
+  { image: cert13, alt: 'Certificado 13' },
+
 ];
 
 const About = () => {
   return (
     <Layout>
-      {/* <section id="bio-pessoal" className="main-section" style={{ marginTop: '12rem' }}>
-        <img src={familiaImg} alt="Família de Vilander" />
-        <div>
-          <h1>&#10074;Hello World...</h1>
-          <p>
-            Olá mundo, sou Vilander, nascido em novembro de 1986, casado, pai de três filhos e dois cachorros...
-          </p>
-        </div>
-      </section> */}
+      
       <section id="bio-pessoal" className="main-section" style={{ marginTop: '12rem' }}>
         <picture className='foto-familia'>
           <source
@@ -64,7 +77,7 @@ const About = () => {
         <div>
           <h1>&#10074;Hello World...</h1>
           <p>
-            Olá mundo, sou Vilander, nascido em novembro de 1986, casado, pai de três filhos e dois cachorros...
+            Olá mundo, sou Vilander, nascido em novembro de 1986, casado, pai de três filhos e dois cachorros. Meu maior prazer é estar com todos eles curtindo cada momento juntos. Atualmente, estou em transição de carreira para a área de Tecnologia, cursando Ciência de Dados na Univesp e Técnico de Informática para Internet no Senac, com foco em desenvolvimento. Tenho experiência anterior em marketing, design gráfico e gestão de equipes, habilidades que hoje somo ao meu aprendizado em programação, análise de dados e desenvolvimento web. Acredito na importância do aprendizado contínuo e busco sempre evoluir, equilibrando vida pessoal e profissional com muita dedicação e entusiasmo.
           </p>
         </div>
       </section>

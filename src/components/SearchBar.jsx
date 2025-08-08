@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Form, FormControl, Button } from 'react-bootstrap';
-// import './Navbar.css'
 import './SearchBar.css'
 
 const SearchBar = () => {
