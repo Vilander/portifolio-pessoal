@@ -1,0 +1,35 @@
+.post {
+  background: #fff;
+  border-radius: var(--border-radius-lg);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  padding: 2rem;
+  transition: box-shadow 0.2s;
+  border: 1px solid #e8ecef;
+}
+
+.post:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.10);
+  border-color: #b1c0cb;
+}
+
+.post h2 {
+  font-size: 2rem;
+  margin-bottom: 0.25em;
+  font-weight: 700;
+  text-align: left;
+}
+
+.post header {
+  margin-bottom: 0.7rem;
+}
+
+.post time {
+  font-size: 1rem;
+  color: #777c;
+  margin-left: 4px;
+}
+
+.post p {
+  font-size: 1.1rem;
+  margin-bottom: 1em;
+}
