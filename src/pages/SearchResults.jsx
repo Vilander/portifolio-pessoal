@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { useLocation } from 'react-router-dom';
-import { searchData } from '../data/searchData';
-import './SearchResults.css';
+import { searchData } from '../data/search-data';
+import '../styles/SearchResults.css';
 
 const SearchResults = () => {
   const location = useLocation();
