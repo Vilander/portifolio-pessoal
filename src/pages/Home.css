@@ -118,9 +118,12 @@
 
 .secao-destaque {
   display: flex;
-  flex-direction: row; /* Alterado de 'column' para 'row' */
-  align-items: center; /* Centraliza o título verticalmente com os cards */
-  position: relative; /* Boa prática, mas não essencial para esta solução */
+  flex-direction: row;
+  /* Alterado de 'column' para 'row' */
+  align-items: center;
+  /* Centraliza o título verticalmente com os cards */
+  position: relative;
+  /* Boa prática, mas não essencial para esta solução */
   width: 100%;
   padding: 2rem;
   border-radius: 10px;
@@ -133,9 +136,12 @@
   font-size: 3.5rem;
   font-weight: 700;
   transform: rotate(-90deg);
-  white-space: nowrap; /* Impede que o texto quebre a linha */
-  margin: 0; /* Remove a margem antiga e controla o espaçamento no pai */
-  padding-right: 2rem; /* Adiciona um espaço entre o texto e os cards */
+  white-space: nowrap;
+  /* Impede que o texto quebre a linha */
+  margin: 0;
+  /* Remove a margem antiga e controla o espaçamento no pai */
+  padding-right: 2rem;
+  /* Adiciona um espaço entre o texto e os cards */
 }
 
 .cards-destaque {
@@ -145,7 +151,8 @@
   gap: 2rem;
   width: 100%;
   padding: 2rem;
-  flex-grow: 1; /* Adicionado para ocupar o espaço restante */
+  flex-grow: 1;
+  /* Adicionado para ocupar o espaço restante */
 }
 
 .card {
@@ -160,7 +167,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: none; /* Remover borda padrão do Bootstrap se estiver usando o componente Card */
+  border: none;
+  /* Remover borda padrão do Bootstrap se estiver usando o componente Card */
 }
 
 .card:hover {
@@ -185,4 +193,115 @@
   font-size: 1.2rem;
   line-height: 1.5;
   text-decoration: none;
+}
+
+/* =================================== */
+/* === LAYOUT RESPONSIVO PARA MOBILE === */
+/* =================================== */
+
+@media (max-width: 910px) {
+
+  /* --- SEÇÃO 1: CONTEÚDO DESTAQUE --- */
+
+  .conteudo-destaque {
+    display: flex; /* Muda para flexbox */
+    flex-direction: column; /* Empilha os itens verticalmente */
+    align-items: center;  /* Centraliza tudo no eixo horizontal */
+    padding: 2rem 1rem; /* Ajusta o padding */
+    margin-top: 3rem;
+    min-height: auto; /* Remove a altura mínima fixa */
+    overflow: hidden; /* Mantém o overflow hidden */
+  }
+
+  .developer-digital {
+    order: 1; /* Ordem 1 */
+    position: static; /* RESETA o posicionamento absoluto */
+    font-size: 2.5rem; /* Diminui a fonte para mobile */
+    text-align: center; /* Centraliza o texto */
+    width: auto; /* Remove a largura fixa */
+    margin: 0 0 2rem 0; /* Adiciona margem inferior */
+    line-height: 1.2;
+  }
+
+  .menu-lateral {
+    color:#fff;
+    order: 2; /* Ordem 2 */
+    position: static; /* RESETA o posicionamento absoluto */
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.2rem;
+    margin: 0 0 2rem 0; /* Adiciona margem inferior */
+    width: 100%;
+  }
+  
+  /* Remove efeitos de linha do menu no mobile para um visual mais limpo */
+  .menu-lateral a::after,
+  .menu-lateral a::before {
+    display: none;
+  }
+
+  .botao-menu {
+    display: flex;
+    justify-content: center;
+    background-color: #273345;
+    height: 40px;
+    width: 80%;
+    border-radius: 10px;
+    padding-top: 5px;
+  }
+  
+  .botao-menu:hover {
+    animation: none; 
+    color: #c5caad; 
+  }
+
+  .perfil-destaque {
+    order: 3; /* Ordem 3 */
+    position: static; /* RESETA o posicionamento */
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .foto-destaque {
+    position: static; /* RESETA o posicionamento */
+    left: auto; /* RESETA a propriedade 'left' */
+    max-width: 100%;
+    width: 30rem;
+    margin: 0;
+  }
+
+ 
+
+  /* --- SEÇÃO 2: DESTAQUES (CARDS) --- */
+  
+  .secao-destaque {
+    flex-direction: column; /* Empilha o título e os cards */
+    padding: 2rem 1rem;
+  }
+
+  .titulo-destaque {
+    transform: none; /* Remove a rotação */
+    position: static; /* RESETA o posicionamento */
+    white-space: normal;
+    font-size: 2.5rem;
+    padding-right: 0;
+    margin-bottom: 2rem; /* Adiciona espaço entre o título e os cards */
+  }
+
+  .cards-destaque {
+    flex-direction: column; /* Empilha os cards */
+    align-items: center; /* Centraliza os cards */
+    padding: 0;
+    gap: 1.5rem;
+  }
+
+  .card {
+    width: 90%; /* Ocupa quase toda a largura */
+    min-width: 0; /* Reseta o min-width do desktop */
+    max-width: 400px; /* Define uma largura máxima */
+  }
 }

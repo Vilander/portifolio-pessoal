@@ -64,14 +64,16 @@
   position: relative;
 }
 
-.main-section h1, .main-section h2 {
+.main-section h1,
+.main-section h2 {
   font-size: var(--font-size-xl);
   margin-bottom: var(--spacing-lg);
   color: var(--primary-color);
   text-align: right;
 }
 
-.main-section p, .main-section ul {
+.main-section p,
+.main-section ul {
   font-size: var(--font-size-base);
   line-height: 1.7;
   color: var(--text-color);
@@ -80,162 +82,93 @@
 /* --- MEDIA QUERIES (Responsividade) --- */
 /* Unificando todos os media queries aqui, do maior para o menor */
 
-@media (max-width: 1496px) {
-  .developer-digital {
-    left: -15rem;
-  }
-  .menu-lateral {
-    left: 2rem;
-    margin-top: 8rem;
-  }
-  .foto-destaque {
-    left: 23rem;
-  }
-}
-
 @media (max-width: 1366px) {
-  .secao-destaque {
-    flex-direction: column;
-  }
 
-  .titulo-destaque {
-    margin: 0 0 2rem 0; /* Adiciona uma margem inferior para separar do cards */
-    position: static;
-    transform: rotate(0deg); /* ou transform: none; */
-    white-space: normal; /* Permite a quebra de linha se necessário */
-    padding-right: 0; /* Remove o padding da versão desktop */
-  }
-
-  .developer-digital {
-    left: -17rem;
-  }
-  .menu-lateral {
-    left: 4rem;
-  }
-  .foto-destaque {
-    left: 261px;
-  }
-  .cards-destaque {
-    flex-wrap: nowrap;
-  }
   .main-footer {
     height: auto;
   }
 }
 
-@media (max-width: 910px) {
-  .developer-digital { left: -10rem; }
-  .cards-destaque { flex-wrap: wrap; }
-}
-
 @media (max-width: 785px) {
-  .foto-destaque {
-    left: 12rem;
-    max-width: 800px;
-    top: 2rem;
-  }
-  .developer-digital {
-    left: -6rem;
-    font-size: 3.8rem;
-    padding-bottom: 4rem;
-  }
   .elipse {
     width: 4rem;
     height: 4rem;
     top: -1rem;
   }
-  .elipse img { width: 2.5rem; }
 
-  .footer-conteudo { flex-direction: column; text-align: center; gap: 0.5rem;}
-  .infoContato, .vilander-costa { font-size: 0.8rem; text-align: center; }
+  .elipse img {
+    width: 2.5rem;
+  }
+
+  .footer-conteudo {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5rem;
+  }
+
+  .infoContato,
+  .vilander-costa {
+    font-size: 0.8rem;
+    text-align: center;
+  }
 
   .main-section {
     padding: var(--spacing-xl) var(--spacing-md);
     width: 94vw;
   }
-  .main-section h1, .main-section h2 {
+
+  .main-section h1,
+  .main-section h2 {
     font-size: 1.5rem;
     text-align: center;
   }
-  .main-section p, .main-section ul {
+
+  .main-section p,
+  .main-section ul {
     font-size: 0.9rem;
     text-align: justify;
   }
+
   .info-card {
     flex-direction: column;
     text-align: center;
   }
-  .carousel-item { height: 18rem; }
-  .carousel-item img { height: 15rem; }
 
-  #skills .habilidades { flex-direction: column; }
+  .carousel-item {
+    height: 18rem;
+  }
+
+  .carousel-item img {
+    height: 15rem;
+  }
+
+  #skills .habilidades {
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 768px) {
-    #bio-pessoal {
-        flex-direction: column;
-    }
+  #bio-pessoal {
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 480px) {
-  .icone-sup { height: 40px; }
-  .redes-topo i { font-size: 1.5rem; }
-
-  .conteudo-destaque {
-    min-height: 60vh;
-    margin-top: 3rem;
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    overflow: visible;
-  }
-  
-  .developer-digital {
-    font-size: 2rem;
-    position: static;
-    text-align: center;
-    margin-bottom: 2rem;
-  }
-
-  .menu-lateral {
-    position: static;
-    flex-direction: column;
-    font-size: 1.5rem;
-    gap: 0.8rem;
-    margin: 0;
-    width: 100%;
-  }
-
-  .menu-lateral a {
-    color: #fff;
-    width: 15rem;
-    text-align: center;
-    background-color: var(--primary-color);
+  .icone-sup {
     height: 40px;
-    border-radius: 10px;
-    padding-top: 5px;
   }
 
-  .perfil-destaque {
-    order: -1; /* Mover a foto para cima */
-    padding: 0;
-    margin-bottom: 1rem;
+  .redes-topo i {
+    font-size: 1.5rem;
   }
 
-  .foto-destaque {
-    position: static;
-    width: 100%;
-    max-width: 15rem;
-  }
-
-  .card { width: 90%; }
-  
   .whatsapp-float {
     width: 50px;
     height: 50px;
     bottom: 90px;
   }
-  .whatsapp-float i { font-size: 1.8rem; }
+
+  .whatsapp-float i {
+    font-size: 1.8rem;
+  }
 }
