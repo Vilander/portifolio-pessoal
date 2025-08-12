@@ -46,7 +46,7 @@ const Portfolio = () => {
                 <div className="conteudo">
                     <h2>&#10074;Projetos DEV...</h2>
                     <Carrossel items={devItems} id="carouselDEV" />
-                    <h6 style={{ color: '#9BA0AA' }}><em>CLIQUE NA IMAGEM PARA ACESSAR O REPOSITÓRIO GITHUB</em></h6>
+                    <h6 className='observacao-direcionamento'><em>CLIQUE NA IMAGEM PARA ACESSAR O REPOSITÓRIO GITHUB</em></h6>
                 </div>
             </section>
 
