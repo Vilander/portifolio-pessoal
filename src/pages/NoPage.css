@@ -57,8 +57,8 @@
     text-decoration: none;
     perspective: 300px;
     transform-style: preserve-3d;
-    padding: 1rem;
-    border-radius: 20px;
+    padding: 1rem 2rem 1rem 2rem;
+    border-radius: 25rem;
 }
 
 .btn-404:hover {
