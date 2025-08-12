@@ -1,0 +1,86 @@
+:root {
+    --primary-color: #273345;
+    --secondary-color: #08439c;
+    --accent-color: #007bff;
+    --text-color: #333;
+    --light-bg: #ffffff37;
+    --light-grey: #EFEAE6;
+    --shadow-color: #9090907c;
+
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 1.5rem;
+    --spacing-xl: 3rem;
+    --spacing-xxl: 4rem;
+    --spacing-xxxl: 5rem;
+
+    --border-radius-sm: 0.5rem;
+    --border-radius-md: 1rem;
+    --border-radius-lg: 12px;
+
+    --font-size-base: 1.4rem;
+    --font-size-lg: 1.5rem;
+    --font-size-xl: 2rem;
+    --font-size-xxl: 2.2rem;
+}
+
+.pagina-404 {
+    display: flex;
+    margin: 20rem 0px 20rem 0px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.nopage-text {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.nopage-text h1 {
+    font-size: 10rem;
+}
+
+.nopage-text h2 {
+    font-style: italic;
+    margin-bottom: 2rem;
+}
+
+.btn-404 {
+    background-color: var(--primary-color);
+    /* color: #fff; */
+    text-decoration: none;
+    perspective: 300px;
+    transform-style: preserve-3d;
+    padding: 1rem;
+    border-radius: 20px;
+}
+
+.btn-404:hover {
+    /* color: #c5caad; */
+    animation: rotate3d 0.7s;
+}
+
+@keyframes rotate3d {
+    0% {
+        transform: rotateX(0deg);
+    }
+
+    50% {
+        transform: rotateX(180deg);
+    }
+
+    100% {
+        transform: rotateX(360deg);
+    }
+}
+
+.botao-no-page {
+    text-decoration: none;
+    color: #fff;
+}

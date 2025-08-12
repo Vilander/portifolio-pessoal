@@ -5,7 +5,7 @@ export const searchData = [
     title: "Sobre Mim",
     url: "/sobre#bio-pessoal",
     content: `
-      Olá mundo, sou Vilander, nascido em novembro de 1986, casado, pai de três filhos e dois cachorros. Meu maior prazer é estar com todos eles curtindo cada momento juntos. Atualmente, estou em transição de carreira para a área de Tecnologia, cursando Ciência de Dados na Univesp e Técnico de Informática para Internet no Senac, com foco em desenvolvimento. Tenho experiência anterior em marketing, design gráfico e gestão de equipes, habilidades que hoje somo ao meu aprendizado em programação, análise de dados e desenvolvimento web. Acredito na importância do aprendizado contínuo e busco sempre evoluir, equilibrando vida pessoal e profissional com muita dedicação e entusiasmo.
+      Olá mundo, sou Vilander, nascido em novembro de 1986, moro em Americana/SP, casado, pai de três filhos e dois cachorros. Meu maior prazer é estar com todos eles curtindo cada momento juntos. Atualmente, estou em transição de carreira para a área de Tecnologia, cursando Ciência de Dados na Univesp e Técnico de Informática para Internet no Senac, com foco em desenvolvimento. Tenho experiência anterior em marketing, design gráfico e gestão de equipes, habilidades que hoje somo ao meu aprendizado em programação, análise de dados e desenvolvimento web. Acredito na importância do aprendizado contínuo e busco sempre evoluir, equilibrando vida pessoal e profissional com muita dedicação e entusiasmo.
     `,
   },
   {

@@ -16,6 +16,7 @@ import Portfolio from './pages/Portfolio';
 import Blog from './pages/Blog';
 import Contato from './pages/Contato';
 import SearchResults from './pages/SearchResults';
+import NoPage from './pages/NoPage';
 
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
         <Route path="/blog" element={<Blog />} />
         <Route path="/contato" element={<Contato />} />
         <Route path="/search" element={<SearchResults />} />
+        <Route path="*" element={<NoPage />} />
       </Routes>
     </BrowserRouter>
   );
