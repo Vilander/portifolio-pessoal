@@ -114,7 +114,7 @@ export const searchData = [
 
        
       DEVCONVERGE -LATAM 2025:
-      A Oracle vai receber em sua casa as comunidades Quarkus Club , SouJava, Java Meetup SP |
+      A Oracle vai receber em sua casa as comunidades Quarkus Club , SouJava, Java Meetup SP, Golang SP, Java Girls JUG, NodeBR, PyLadies São Paulo, Kotlin Devs Brasil e GruPy-SP no dia 09/08 |
 
       Hackathon Senac:
       Hackathon Senac – Mural de Empreendedorismo Social Tive a oportunidade de participar de um Hackathon |

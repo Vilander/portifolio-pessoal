@@ -7,7 +7,7 @@ const posts = [
   {
     title: 'DEVCONVERGE -LATAM 2025',
     date: '2025-07-31',
-    summary: 'A Oracle vai receber em sua casa as comunidades Quarkus Club , SouJava, Java Meetup SP...',
+    summary: 'A Oracle vai receber em sua casa as comunidades Quarkus Club , SouJava, Java Meetup SP, Golang SP, Java Girls JUG, NodeBR, PyLadies São Paulo, Kotlin Devs Brasil e GruPy-SP no dia 09/08...',
     link: 'https://www.linkedin.com/posts/luisfabriciodellamas_java-python-kotlin-activity-7355013627667460096-acjc?utm_source=share&utm_medium=member_desktop'
   },
   {
