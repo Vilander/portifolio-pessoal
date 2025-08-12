@@ -25,27 +25,30 @@
 }
 
 .carousel-item img {
-    height: 38rem;
-    max-width: 100%;
-    justify-self: center;
+  height: 38rem;
+  max-width: 100%;
+  justify-self: center;
 }
 
 
 .carousel-control-next-icon,
 .carousel-control-prev-icon {
-    background-color: rgba(163, 163, 163, 0.555);
-    padding: 1rem;
-    border-radius: 50%;
-    box-shadow: 5px 5px 15px 4px #aba6a645;
+  background-color: rgba(163, 163, 163, 0.555);
+  padding: 1rem;
+  border-radius: 50%;
+  box-shadow: 5px 5px 15px 4px #aba6a645;
 }
 
-.carousel{
-    background-color: #a09e9e18;
+.carousel {
+  background-color: #a09e9e18;
 }
 
-@media (max-width:798px){
-    .carousel-item img {
-        height: 15rem;
-        
-    }
+@media (max-width:798px) {
+  .carousel-item img {
+    height: 15rem;
+  }
+
+  .carousel-inner {
+    max-height: 270px;
+  }
 }

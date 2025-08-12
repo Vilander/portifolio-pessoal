@@ -7,6 +7,8 @@
   box-shadow: 13px 10px 20px 3px var(--shadow-color);
   margin: var(--spacing-md) auto;
   padding: var(--spacing-md);
+  flex-direction: column;
+  text-align: center;
 }
 
 .info-card:hover {

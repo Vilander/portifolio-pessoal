@@ -19,37 +19,69 @@
 }
 
 .foto-familia {
-    display: flex;
-    justify-content: center;
-    max-width: 100%;
-    height: auto;
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+  height: auto;
 }
 
 
 #bio-pessoal {
-    display: block;
-    align-items: center;
-    gap: 2rem;
+  display: block;
+  align-items: center;
+  gap: 2rem;
 
 }
 
 .main-section ul {
-    list-style: none;
-    padding: 0 auto;
-    text-align: left;
+  list-style: none;
+  padding: 0 auto;
+  text-align: left;
 }
 
 .main-section ul li::before {
-    content: "✔ ";
-    color: var(--accent-color);
-    margin-right: var(--spacing-sm);
+  content: "✔ ";
+  color: var(--accent-color);
+  margin-right: var(--spacing-sm);
 }
 
 .main-section ul .sub-list-item::before {
-    content: "↪ ";
-    color: var(--primary-color);
-    margin-right: var(--spacing-sm);
+  content: "↪ ";
+  color: var(--primary-color);
+  margin-right: var(--spacing-sm);
 }
 
 
+@media (max-width: 785px) {
+  .main-section {
+    padding: var(--spacing-xl) var(--spacing-md);
+    width: 94vw;
+  }
 
+  .main-section h1,
+  .main-section h2 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .main-section p,
+  .main-section ul {
+    font-size: 0.9rem;
+    text-align: justify;
+  }
+
+  #skills .habilidades {
+    flex-direction: column;
+  }
+
+  #skills img {
+    height: 20rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #bio-pessoal {
+    flex-direction: column;
+    margin-top: 10rem;
+  }
+}
