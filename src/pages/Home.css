@@ -209,8 +209,10 @@
     align-items: center;  /* Centraliza tudo no eixo horizontal */
     padding: 2rem 1rem; /* Ajusta o padding */
     margin-top: 3rem;
+    margin-bottom: -2rem;
     min-height: auto; /* Remove a altura mínima fixa */
     overflow: hidden; /* Mantém o overflow hidden */
+    z-index: -1;
   }
 
   .developer-digital {

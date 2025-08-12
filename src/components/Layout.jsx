@@ -6,9 +6,9 @@ import WhatsappButton from './WhatsappButton';
 import AccessibilityBar from './AccessibilityBar';
 import backgroundImage from '../assets/images/background-bolinhas.webp';
 
-// A prop "header" será o componente de cabeçalho que queremos renderizar
+
 const Layout = ({ children, header }) => {
-    // Se a prop 'header' foi passada, use-a. Senão, use o DefaultHeader.
+    // Se a prop 'header' for passada vai ser usada, senão, vai ser usado DefaultHeader.
     const HeaderComponent = header || <Navbar />;
 
     return (

@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import '../styles/asb.css';
 import '../styles/default.css';
+import './AccessibilityBar.css'
 
 const AccessibilityBar = () => {
   const accessKey = 4;
@@ -137,7 +138,7 @@ const AccessibilityBar = () => {
         }}
       >
         <i className="fas fa-universal-access" />
-        <span>Menu de acessibilidade</span>
+        {/* <span className='tag-acessibilidade'>Menu de acessibilidade</span> */}
       </button>
 
       {btns.map(btn => (
