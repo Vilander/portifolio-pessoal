@@ -174,12 +174,14 @@
     display: flex;
     align-items: flex-start;
     flex-direction: row-reverse;
+    justify-content: center;
+    gap: 5px;
   }
 
   .cursor-box {
     width: 29vw;
-    height: 17vh;
-    font-size: 12px;
+    height: 20vh;
+    font-size: 10px;
     margin-bottom: 25px;
   }
 
