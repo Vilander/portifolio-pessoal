@@ -110,7 +110,7 @@ export const searchData = [
     title: "Blog",
     url: "/blog",
     content: `
-      No blog compartilho eventos, dicas de desenvolvimento, tendências de tecnologia e notícias relevantes para profissionais da área.
+      No blog compartilho eventos, dicas de desenvolvimento, tendências de tecnologia e notícias relevantes para profissionais da área. |
 
        
       DEVCONVERGE -LATAM 2025:

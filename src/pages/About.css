@@ -25,6 +25,9 @@
   height: auto;
 }
 
+.imagem-responsiva{
+  width: 538px;
+}
 
 #bio-pessoal {
   display: block;
