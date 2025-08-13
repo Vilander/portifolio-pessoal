@@ -62,8 +62,8 @@ const About = () => {
         <div className='area-desenho'>
           
           <div className='credito-geral'>
-            <a href="#" className='credito-sara'> Desenho feito pela minha artista favorita: <em><CiStar /> Sara <CiStar /></em></a>
-            <PiArrowBendDownLeftFill size={50} />
+            <a href="#" className='cursor-box pointer credito-sara'> Desenho feito pela minha artista favorita: <em className='credito-destaque'><CiStar /> Sara <CiStar /></em></a>
+            <PiArrowBendDownLeftFill size={50} className='visually-hidden-2'/>
           </div>
           <picture className='foto-familia'>
             <source
