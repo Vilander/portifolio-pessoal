@@ -34,10 +34,10 @@
   box-shadow: 1px 2px 5px #050505;
 }
 
-.credito-sara:hover{
+/* .credito-sara:hover{ */
   /* scale: 1.1; */
   /* transition: ease 5px; */
-  animation: rotate3d 0.8s;
+  /* animation: rotate3d 0.8s;
 }
 
 @keyframes rotate3d {
@@ -52,6 +52,17 @@
   100% {
       transform: rotateX(360deg);
   }
+} */
+
+/*tentar aplicar*/
+.pointer {
+  cursor: pointer;
+  background: linear-gradient(145deg, #2a2a2a, #383838);
+  border: 2px solid #646cff;
+}
+.credito-sarar:hover {
+  transform: scale(1.05) rotate(2deg);
+  box-shadow: 0 0 15px #646cff50;
 }
 
 #bio-pessoal {
