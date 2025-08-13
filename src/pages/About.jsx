@@ -2,6 +2,8 @@ import React from 'react';
 import Layout from '../components/Layout';
 import InfoCard from '../components/InfoCard';
 import Carrossel from '../components/Carrossel';
+import { PiArrowBendDownLeftFill } from "react-icons/pi";
+import { CiStar } from "react-icons/ci";
 import './About.css'
 
 // Imagens pessoais 
@@ -57,23 +59,28 @@ const About = () => {
     <Layout>
 
       <section id="bio-pessoal" className="main-section" style={{ marginTop: '12rem' }}>
-        <picture className='foto-familia'>
-          <source
-            media="(max-width: 600px)"
-            srcSet={familiaPequenaImg}
-          />
-
-          <source
-            media="(max-width: 1200px)"
-            srcSet={familiaMediaImg}
-          />
-
-          <img
-            src={familiaGrandeImg}
-            alt="Família de Vilander"
-            className="imagem-responsiva"
-          />
-        </picture>
+        <div className='area-desenho'>
+          
+          <div className='credito-geral'>
+            <a href="#" className='credito-sara'> Desenho feito pela minha artista favorita: <em><CiStar /> Sara <CiStar /></em></a>
+            <PiArrowBendDownLeftFill size={50} />
+          </div>
+          <picture className='foto-familia'>
+            <source
+              media="(max-width: 600px)"
+              srcSet={familiaPequenaImg}
+            />
+            <source
+              media="(max-width: 1200px)"
+              srcSet={familiaMediaImg}
+            />
+            <img
+              src={familiaGrandeImg}
+              alt="Família de Vilander"
+              className="imagem-responsiva"
+            />
+          </picture>
+        </div>
         <div>
           <h1>&#10074;Hello World...</h1>
           <p>

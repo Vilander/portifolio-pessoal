@@ -1,23 +1,4 @@
 /* --- PÁGINA SOBRE --- */
-#skills .habilidades {
-  display: flex;
-  align-items: center;
-  gap: var(--spacing-xl);
-}
-
-#skills img {
-  max-width: 100%;
-  height: 100vh;
-  object-fit: contain;
-}
-
-.hard_skill,
-.soft_skill {
-  margin-bottom: var(--spacing-xl);
-  font-size: 1.8rem;
-  text-align: left;
-}
-
 .foto-familia {
   display: flex;
   justify-content: center;
@@ -25,8 +6,52 @@
   height: auto;
 }
 
-.imagem-responsiva{
+/* .imagem-responsiva {
   width: 538px;
+} */
+
+.area-desenho {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 22px;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.credito-geral {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.credito-sara {
+  background-color: #EFEAE6;
+  padding: 15px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  text-align: center;
+  box-shadow: 1px 2px 5px #050505;
+}
+
+.credito-sara:hover{
+  /* scale: 1.1; */
+  /* transition: ease 5px; */
+  animation: rotate3d 0.8s;
+}
+
+@keyframes rotate3d {
+  0% {
+      transform: rotateX(0deg);
+  }
+
+  50% {
+      transform: rotateX(180deg);
+  }
+
+  100% {
+      transform: rotateX(360deg);
+  }
 }
 
 #bio-pessoal {
@@ -54,6 +79,24 @@
   margin-right: var(--spacing-sm);
 }
 
+#skills .habilidades {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xl);
+}
+
+#skills img {
+  max-width: 100%;
+  height: 100vh;
+  object-fit: contain;
+}
+
+.hard_skill,
+.soft_skill {
+  margin-bottom: var(--spacing-xl);
+  font-size: 1.8rem;
+  text-align: left;
+}
 
 @media (max-width: 785px) {
   .main-section {
