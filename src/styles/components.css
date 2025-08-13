@@ -1,4 +1,4 @@
-/* src/styles/components.css */
+
 
 /* --- HEADER --- */
 .cabecalho-principal {
@@ -82,36 +82,7 @@
 /* --- MEDIA QUERIES (Responsividade) --- */
 /* Unificando todos os media queries aqui, do maior para o menor */
 
-@media (max-width: 1366px) {
-
-  .main-footer {
-    height: auto;
-  }
-}
-
 @media (max-width: 785px) {
-  .elipse {
-    width: 4rem;
-    height: 4rem;
-    top: -1rem;
-  }
-
-  .elipse img {
-    width: 2.5rem;
-  }
-
-  .footer-conteudo {
-    flex-direction: column;
-    text-align: center;
-    gap: 0.5rem;
-  }
-
-  .infoContato,
-  .vilander-costa {
-    font-size: 0.8rem;
-    text-align: center;
-  }
-
   .main-section {
     padding: var(--spacing-xl) var(--spacing-md);
     width: 94vw;
@@ -129,29 +100,6 @@
     text-align: justify;
   }
 
-  .info-card {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .carousel-item {
-    height: 18rem;
-  }
-
-  .carousel-item img {
-    height: 15rem;
-  }
-
-  #skills .habilidades {
-    flex-direction: column;
-  }
-}
-
-@media (max-width: 768px) {
-  #bio-pessoal {
-    flex-direction: column;
-    margin-top: 10rem;
-  }
 }
 
 @media (max-width: 480px) {
