@@ -4,7 +4,7 @@ Este documento fornece uma visão técnica detalhada do projeto de portfólio pe
 
 ## 1. Visão Geral do Projeto
 
-O projeto é uma aplicação web de página única (SPA) que serve como portfólio pessoal. Foi desenvolvido para apresentar informações sobre o autor, incluindo suas habilidades, experiências, projetos e um meio para contato. A aplicação é moderna, interativa e totalmente responsiva, construída com foco em boas práticas de desenvolvimento e usabilidade.
+O projeto é uma aplicação web que serve como portfólio pessoal. Foi desenvolvido para apresentar informações sobre o autor, incluindo suas habilidades, experiências, projetos e um meio para contato. A aplicação é moderna, interativa e totalmente responsiva, construída com foco em boas práticas de desenvolvimento e usabilidade.
 
 ## 2. Estrutura do Projeto
 
