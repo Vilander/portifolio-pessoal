@@ -58,7 +58,7 @@ function Navbar() {
                                         data-bs-toggle="dropdown"
                                         aria-expanded="false"
                                     >
-                                        Sobre Mim
+                                        SOBRE MIM
                                     </button>
                                     <ul className="dropdown-menu">
                                         <li><HashLink className="dropdown-item" to="/sobre#bio-pessoal">Hello Word</HashLink></li>
