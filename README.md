@@ -112,11 +112,16 @@ Os seguintes scripts estão definidos no `package.json` e podem ser executados c
     * **Comando**: `eslint .`
     * **Descrição**: Executa o ESLint para analisar todos os arquivos do projeto em busca de erros de código e inconsistências de estilo.
 
-## 7. Licença
+## 7.Protótipo e Mapa do Site
+
+* **Protótipo**: [Figma](https://www.figma.com/proto/JXMarQD5Hpyynn3avmG6ab/prototipo-de-ideias?node-id=0-1&t=mSrL8JBxDfpBDvXi-1)
+* **Mapa do Site**: [Mapa](https://www.figma.com/board/bclX0Sw0dWnadebSwAIE8r/Mapa-Site---Portifolio--c%C3%B3pia-?node-id=0-1&t=svekunizWzbK7e9o-1)
+
+## 8. Licença
 
 Este projeto está licenciado sob a **MIT License**.
 
-## 8. Contato
+## 9. Contato
 
 * **Desenvolvido por**: Vilander Costa
 * **LinkedIn**: [in/vilander-costa](https://www.linkedin.com/in/vilander-costa/)
