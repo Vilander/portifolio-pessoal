@@ -59,7 +59,7 @@ const SearchResults = () => {
 
   return (
     <Layout>
-      <div className="container mx-auto p-4 main-section">
+      <div className="container mx-auto p-4 main-section pag-resultado">
         <h2 className="text-2xl font-bold mb-4">
           Resultados da pesquisa para: "<span className="text-blue-600">{query}</span>"
         </h2>
